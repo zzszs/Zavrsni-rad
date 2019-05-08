@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redragonk580</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/kk.css">
+
+</head>
+
+<body>
+    <div class="bgimg">
+            <header>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                        <table id="cartt" class="table" >
+                                                  <th>Product name</th>
+                                                  <th>Quantity</th>
+                                                  <th>Price &euro;</th>
+                                              
+                                              </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <span id="cartTotal" class="text-primary col-md-6"></span>
+                                    <button type="button" class="btn btn-grey" id="clear">Clear</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" id="checkout">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                        <a href="index.html" class="navbar-brand">PCSHOP</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbar"><span
+                                class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="nvbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Browse</a>
+        
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="all.html">All</a>
+                                            <a class="dropdown-item" href="keyboard.html">Keyboard</a>
+                                            <a class="dropdown-item" href="mouse.html">Mouse</a>
+                                            <a class="dropdown-item" href="headphones.html">Headphones</a>
+                                            <a class="dropdown-item" href="monitor.html">Monitor</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item"> <span id="logspan"> </span></li>
+                                <li class="nav-item"> <span id="singspan"> </span></li>
+                                <li class="nav-item align-right"><button type="button" id="cartbtn" class="btn btn-secondary float-right"
+                                        data-toggle="modal" data-target="#exampleModal">
+                                        Cart
+                                    </button></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <br>
+                    <br>
+                </header>
+        
+
+        <main>
+            <div class="container bg-white  ">
+                <h3 class="text-secondary" style="margin-top: 10px">Product info</h3>
+                <div class="row justify-content-center">
+                    <h4 id="prod12">Redragon K580</h4>
+                    <img src="images/keyboard/redragonk580.jpg" alt="k580">
+                    <br>
+                    <div class="container ">
+                        <h4>Price: &euro;<span class="price" id="prc12">65</span></h4>
+                        <input type="number" id="qnty12" class="col-sm-4 float-right form-control" min=1 value="1">
+
+                        <button class="btn btn-primary" id="btn12">Add to cart</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row mx-auto">
+                    <h5>About product</h5>
+                    <p>5 MACRO KEYS: There are 5 programmable macro keys(G1~G5) on the keyboard which can be recorded
+                        macros on the fly without any additional software required to be installed. Easy to edit and DIY
+                        your stylish keyboard. 【No CD software included, please download software from
+                        https://redragonshop.com/pages/software】
+                        DEDICATED MULTIMEDIA CONTROLS. Dedicated media controls let you quickly play, pause, skip the
+                        music right from the keyboard without interrupting your game. Also, designed with a
+                        volume/backlight adjust wheel, it's easy to adjust volume or backlight brightness directly with
+                        the wheel in the upper right side of the keyboard. Very convenient and cool looking.
+                        N-KEY ROLLOVER: 104 keys anti-ghosting allows you to simultaneously click multiple keys. The
+                        floating keys and OUTEMU blue switches will give you a great gaming experience with fast
+                        response and nice clicky sound.
+                        RGB BACKLIGHT: 18 backlight models allow you to type in the dark. You can adjust its brightness
+                        with a control wheel or FN + Up/Down. 5 modes of RGB side edge lighting. The color of each key
+                        lighting on the keyboard can be customized easily without installing software, a great choice to
+                        DIY your stylish keyboard.
+                        Durability: 50 million times keystroke test, small actuation force, and short travel make it.
+                        Special Double-shot injection molded keycaps never fade Key color. Waterproof and dust
+                        resistant. </p>
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="bg-secondary ">
+                <div class="container-fluid bg-dark">
+                    <div class="row text-center">
+                        <div class="col-md-6 text-light">
+                            <p> Copyright © 2019 PCSHOP</p>
+                        </div>
+                        <div class="col-md-6 text-light">
+                            <h4>Contact us</h4>
+                            <ul class="nobull">
+                                <li>Phone: 026/444891</li>
+                                <li>Mail: zod886@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/searchsort.js"></script>
+        <script type="text/javascript" src="js/loggedin.js"></script>
+        <script type="text/javascript" src="js/cart.js"></script>
+    
+</body>
+
+</html>

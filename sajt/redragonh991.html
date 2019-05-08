@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redragonh911</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/kk.css">
+
+</head>
+
+<body>
+
+    <div class="bgimg">
+            <header>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                        <table id="cartt" class="table" >
+                                                  <th>Product name</th>
+                                                  <th>Quantity</th>
+                                                  <th>Price &euro;</th>
+                                              
+                                              </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <span id="cartTotal" class="text-primary col-md-6"></span>
+                                    <button type="button" class="btn btn-grey" id="clear">Clear</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" id="checkout">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                        <a href="index.html" class="navbar-brand">PCSHOP</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbar"><span
+                                class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="nvbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Browse</a>
+        
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="all.html">All</a>
+                                            <a class="dropdown-item" href="keyboard.html">Keyboard</a>
+                                            <a class="dropdown-item" href="mouse.html">Mouse</a>
+                                            <a class="dropdown-item" href="headphones.html">Headphones</a>
+                                            <a class="dropdown-item" href="monitor.html">Monitor</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item"> <span id="logspan"> </span></li>
+                                <li class="nav-item"> <span id="singspan"> </span></li>
+                                <li class="nav-item align-right"><button type="button" id="cartbtn" class="btn btn-secondary float-right"
+                                        data-toggle="modal" data-target="#exampleModal">
+                                        Cart
+                                    </button></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <br>
+                    <br>
+                </header>
+        
+
+        <main>
+            <div class="container bg-white">
+                <h3 class="text-secondary" style="margin-top: 10px">Product info</h3>
+                <div class="row justify-content-center">
+                    <h4 id="prod14">Redragon H991</h4>
+                    <img src="images/headphones/redragonh991.jpg" alt="redragon991">
+                    <br>
+                    <div class="container ">
+                        <h4>Price: &euro;<span class="price" id="prc14">50</span></h4>
+                        <input type="number" id="qnty14" class="col-sm-4 float-right form-control" min=1 value="1">
+
+                        <button class="btn btn-primary" id="btn14">Add to cart</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row mx-auto">
+                    <h5>About product</h5>
+                    <p> ADVANCED ACTIVE NOISE CANCELING TECHNOLOGY: Redragon H991 headphones selectively eliminate 99%
+                        inappropriate and unpleasant noises from airplane operation, urban traffic, public places and so
+                        on, ensuring you to enjoy your quiet music and conference call whenever and wherever, especially
+                        suitable for games, travel and work. The ANC function can be easily turned on/off by a button.
+                        LIGHTWEIGHT & COMFORTABLE: Premium super cushiony pads and adjustable ergonomically designed
+                        headband make the headphones comfortable for long time wear especially for the people who love
+                        playing PC game. Redragon devotes to deliver the best gaming experiencing to players.
+                        SURROUND SOUND: Equipped with High Performance 7.1 Audio and intelligent extreme bass enhances
+                        sound clarity and provides you studio sound field and makes it valuable for various games. Also,
+                        the stereo 7.1 Audio helps you to catch every detail of the sound, great for game and music.
+                        HIGH-QUALITY BUILT-IN MICROPHONE: The headset is equipped with a stretchable and bendable
+                        microphone design, 360 admission source and individual vibration control button. Unique virtual
+                        speaker technology realizes sound reverberation, build great sound effect, and real game
+                        experience. Perfect for in-game and online chat.
+                        PLUG & PLAY: Not need to setup or installation. The headphone is packaged ready for instant use
+                        and enjoyment. It can work well with PC, laptop, PS3 and PS4.</p>
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="bg-secondary ">
+                <div class="container-fluid bg-dark">
+                    <div class="row text-center">
+                        <div class="col-md-6 text-light">
+                            <p> Copyright © 2019 PCSHOP</p>
+                        </div>
+                        <div class="col-md-6 text-light">
+                            <h4>Contact us</h4>
+                            <ul class="nobull">
+                                <li>Phone: 026/444891</li>
+                                <li>Mail: zod886@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/searchsort.js"></script>
+        <script type="text/javascript" src="js/loggedin.js"></script>
+        <script type="text/javascript" src="js/cart.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+.card {
+    margin-top: 10px;
+}
+#adcart {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bgimg {
+    
+    background-image: url("https://images.pexels.com/photos/326461/pexels-photo-326461.jpeg?cs=srgb&dl=artificial-intelligence-chip-circuit-326461.jpg&fm=jpg");
+  
+    
+    height: 50%;
+  
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.bm {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.pd {
+    padding: 5px
+}
+
+.pd2 {
+    padding: 30px;
+}
+
+#signout {
+    margin-right: 10px;
+}
+
+.profback {
+    background-color: aqua;
+}
+
+#mario {
+    max-width: 170px;
+    width: 100%;
+    height: auto;
+}
+.creditcard::-webkit-inner-spin-button,
+.creditcard::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+
+  .nobull {
+    list-style-type: none;
+  }

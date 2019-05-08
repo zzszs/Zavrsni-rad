@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mpow059</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/kk.css">
+
+</head>
+
+<body>
+
+    <div class="bgimg">
+            <header>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                        <table id="cartt" class="table" >
+                                                  <th>Product name</th>
+                                                  <th>Quantity</th>
+                                                  <th>Price &euro;</th>
+                                              
+                                              </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <span id="cartTotal" class="text-primary col-md-6"></span>
+                                    <button type="button" class="btn btn-grey" id="clear">Clear</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" id="checkout">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                        <a href="index.html" class="navbar-brand">PCSHOP</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbar"><span
+                                class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="nvbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Browse</a>
+        
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="all.html">All</a>
+                                            <a class="dropdown-item" href="keyboard.html">Keyboard</a>
+                                            <a class="dropdown-item" href="mouse.html">Mouse</a>
+                                            <a class="dropdown-item" href="headphones.html">Headphones</a>
+                                            <a class="dropdown-item" href="monitor.html">Monitor</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item"> <span id="logspan"> </span></li>
+                                <li class="nav-item"> <span id="singspan"> </span></li>
+                                <li class="nav-item align-right"><button type="button" id="cartbtn" class="btn btn-secondary float-right"
+                                        data-toggle="modal" data-target="#exampleModal">
+                                        Cart
+                                    </button></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <br>
+                    <br>
+                </header>
+        
+        <main>
+            <div class="container bg-white">
+                <h3 class="text-secondary" style="margin-top: 10px">Product info</h3>
+                <div class="row justify-content-center">
+                    <h4 id="prod9">Mpow 059</h4>
+                    <img src="images/headphones/mpow059.jpg" alt="mpow059">
+                    <br>
+                    <div class="container ">
+                        <h4 >Price: &euro;<span class="price" id="prc9">30</span></h4>
+                        <input type="number" id="qnty9" class="col-sm-4 float-right form-control" min=1 value="1">
+
+                        <button class="btn btn-primary" id="btn9">Add to cart</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row mx-auto">
+                    <h5>About product</h5>
+                    <p>IMPRESSIVE SOUND QUALITY IS THE ULTIMATE GOAL: The High-fidelity stereo sound benefits from the
+                        40mm neodymium driver, CSR chip, and the around-ear cushion design which provide a well-closed
+                        and immersed enviroment for your ears, Just lose yourself in the music!
+                        BUILT TO STAY COMFORTABLE: The Memory-protein ear cushion simulate human skin texture, ensuring
+                        lasting comfort. The stainless steel slider and softly padded headband allows you to find the
+                        perfect fit without constraint and provide excellent durability
+                        NEVER POWER OFF, BOTH WIRELESS & WIRED: 1. The wireless mode: Battery update to 20-hr music
+                        time/ talking time in a single charge, instead of 13-15 hrs from Oct 1, 2017; 2. The Wired mode:
+                        you can also use it as a wired headphone with the provided audio cable so the headphones will
+                        never power off
+                        HANDS-FREE CALL & BUILT-IN MIC: Please Note: The Microphone only works in the wireless mode.
+                        Mpow Bluetooth headphones provide a quick and stable connection with your Bluetooth enabled
+                        devices like cell phones, tablets, pc, TVs within 33 feet, with a high-quality built-in
+                        microphone for hands-free calls
+                        FOLDABLE DESIGN WITH A PORTABLE BAG & GENTLE REMINDER : The foldable Headband is not only
+                        designed for saving your desk space but for carrying in the provided bag. Gentle Reminder:
+                        Depending on your head/ear size/shape, it may be a little tight(feels like“on ear”) for someone
+                        to wear which is designed to avoid sound leakage. In case of that and to get both audio and
+                        wearing comfort, please take off the headphone every 1-2 hrs to get your ears relax and protect
+                        them from muggy environment in use</p>
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="bg-secondary ">
+                <div class="container-fluid bg-dark">
+                    <div class="row text-center">
+                        <div class="col-md-6 text-light">
+                            <p> Copyright © 2019 PCSHOP</p>
+                        </div>
+                        <div class="col-md-6 text-light">
+                            <h4>Contact us</h4>
+                            <ul class="nobull">
+                                <li>Phone: 026/444891</li>
+                                <li>Mail: zod886@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/searchsort.js"></script>
+        <script type="text/javascript" src="js/loggedin.js"></script>
+        <script type="text/javascript" src="js/cart.js"></script>
+    
+</body>
+
+</html>

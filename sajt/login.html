@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PCSHOP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/kk.css">
+</head>
+
+<body>
+    <div class="bgimg">
+            <header>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                        <table id="cartt" class="table" >
+                                                  <th>Product name</th>
+                                                  <th>Quantity</th>
+                                                  <th>Price &euro;</th>
+                                              
+                                              </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <span id="cartTotal" class="text-primary col-md-6"></span>
+                                    <button type="button" class="btn btn-grey" id="clear">Clear</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" id="checkout">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                        <a href="index.html" class="navbar-brand">PCSHOP</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbar"><span
+                                class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="nvbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Browse</a>
+        
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="all.html">All</a>
+                                            <a class="dropdown-item" href="keyboard.html">Keyboard</a>
+                                            <a class="dropdown-item" href="mouse.html">Mouse</a>
+                                            <a class="dropdown-item" href="headphones.html">Headphones</a>
+                                            <a class="dropdown-item" href="monitor.html">Monitor</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item"> <span id="logspan"> </span></li>
+                                <li class="nav-item"> <span id="singspan"> </span></li>
+                                <li class="nav-item align-right"><button type="button" id="cartbtn" class="btn btn-secondary float-right"
+                                        data-toggle="modal" data-target="#exampleModal">
+                                        Cart
+                                    </button></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <br>
+                    <br>
+                </header>
+        
+        <main>
+
+
+            <div class="container bg-white col-md-7">
+                <br>
+                <div class="bg-dark text-light pd">
+                    <h3 class="bg-secondary">Login<br></h3>
+                </div>
+                <br><br><br><br>
+                <div class="container" style="min-height:100vh;">
+
+                    <form>                    
+                        <div class="form-row justify-content-center">
+                            <div class="form-group col-md-6">
+                                <label for="username">Username:</label><br>
+                                <input type="text" class="form-control" id="username"><span id="spn7" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center">
+                            <div class="form-group col-md-6">
+                                <label for="pass">Password:</label><br>
+                                <input type="password" class="form-control" id="pass"><span id="spn9" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row justify-content-center">
+                        <input id="login" type="submit" value="Login" class="btn btn-primary ">
+                        </div>
+                    </form>
+                </div>
+
+
+        </main>
+
+        <footer class="bg-secondary ">
+                <div class="container-fluid bg-dark">
+                    <div class="row text-center">
+                        <div class="col-md-6 text-light">
+                            <p> Copyright © 2019 PCSHOP</p>
+                        </div>
+                        <div class="col-md-6 text-light">
+                            <h4>Contact us</h4>
+                            <ul class="nobull">
+                                <li>Phone: 026/444891</li>
+                                <li>Mail: zod886@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PCSHOP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/kk.css">
+</head>
+
+<body>
+    <div class="bgimg">
+            <header>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                        <table id="cartt" class="table" >
+                                                  <th>Product name</th>
+                                                  <th>Quantity</th>
+                                                  <th>Price &euro;</th>
+                                              
+                                              </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <span id="cartTotal" class="text-primary col-md-6"></span>
+                                    <button type="button" class="btn btn-grey" id="clear">Clear</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" id="checkout">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                        <a href="index.html" class="navbar-brand">PCSHOP</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbar"><span
+                                class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="nvbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Browse</a>
+        
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="all.html">All</a>
+                                            <a class="dropdown-item" href="keyboard.html">Keyboard</a>
+                                            <a class="dropdown-item" href="mouse.html">Mouse</a>
+                                            <a class="dropdown-item" href="headphones.html">Headphones</a>
+                                            <a class="dropdown-item" href="monitor.html">Monitor</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item"> <span id="logspan"> </span></li>
+                                <li class="nav-item"> <span id="singspan"> </span></li>
+                                <li class="nav-item align-right"><button type="button" id="cartbtn" class="btn btn-secondary float-right"
+                                        data-toggle="modal" data-target="#exampleModal">
+                                        Cart
+                                    </button></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <br>
+                    <br>
+                </header>
+        
+        <main>
+
+            <div class="container bg-white col-md-7" ><br>
+                <div class="container bg-dark">
+                    <div id="crimg" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="razerthresher.html"><img class="w-100"
+                                        src="images/headphones/cr_razer thresher.png" alt="razerthresher"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="razerhuntsman.html"><img class="w-100"
+                                        src="images/keyboard/cr_razerhuntsman.jpg" alt="rezerhuntsmanr"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="samsungc49.html"><img class="w-100" src="images/monitor/cr_samsungc49.jpg"
+                                        alt="samsungc49"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="razermamba.html"><img class="w-100" src="images/mouse/cr_razermamba.jpg"
+                                        alt="razermamba"></a>
+                            </div>
+                        </div>
+
+                        <a href="#crimg" class="carousel-control-prev" role="button" data-slide="prev"><span
+                                class="carousel-control-prev-icon"></span><span class="sr-only">Prev</span></a>
+                        <a href="#crimg" class="carousel-control-next" role="button" data-slide="next"><span
+                                class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a>
+
+                    </div>
+                </div>
+
+                <h3 class="text-light bg-dark">New <br></h3>
+                <br>
+                <br>
+                <h4 class="text-light bg-dark">Reccomended</h4>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="card mx-1" style="width: 18rem; ">
+                                <img src="images/monitor/cd_dells.jpg" class="card-img-top" alt="dell">
+                                <div class="card-body">
+                                    <a href="dells.html">
+                                        <h5 class="card-title" id="prod5">Dell S Series 32"</h5>
+                                    </a>
+                                    <p class="card-text"><b>Price: &euro;<span class="price" id="prc5">300</span></b></p>
+                                    <input type="number" id="qnty5" class="col-sm-4 float-right form-control" min=1 value="1">
+                                    <button class="btn btn-primary" id="btn5">Add to cart</button>
+                                </div>
+                            </div>
+    
+                            <div class="card mx-1" style="width: 18rem;">
+                                    <img src="images/mouse/cd_logitechm525.jpg" class="card-img-top" alt="m525">
+                                    <div class="card-body">
+                                        <a href="logitechm525.html">
+                                            <h5 class="card-title" id="prod8">Logitech M525</h5>
+                                        </a>
+                                        <p class="card-text"><b>Price: &euro;<span class="price" id="prc8">12</span></b></p>
+                                        <input type="number" id="qnty8" class="col-sm-4 float-right form-control" min=1 value="1">
+        
+                                        <button class="btn btn-primary" id="btn8">Add to cart</button>
+                                    </div>
+                                </div>
+        
+                                <div class="card mx-1 " style="width: 18rem;">
+                                        <img src="images/monitor/cd_hppavilion.jpg" class="card-img-top" alt="pavilion">
+                                        <div class="card-body">
+                                            <a href="hppavilion.html">
+                                                <h5 class="card-title" id="prod11">HP Pavilion</h5>
+                                            </a>
+                                            <p class="card-text"><b>Price: &euro;<span class="price" id="prc11">90</span></b></p>
+                                            <input type="number" id="qnty11" class="col-sm-4 float-right form-control" min=1 value="1">
+            
+                                            <button class="btn btn-primary" id="btn11">Add to cart</button>
+                                        </div>
+                                    </div>
+            
+                                    <div class="card mx-1" style="width: 18rem; ">
+                                            <img src="images/headphones/cd_redragonh991.jpg" class="card-img-top" alt="redragonm991">
+                                            <div class="card-body">
+                                                <a href="redragonh991.html">
+                                                    <h5 class="card-title" id="prod14">Redragon H991</h5>
+                                                </a>
+                                                <p class="card-text"><b>Price: &euro;<span class="price" id="prc14">50</span></b></p>
+                                                <input type="number" id="qnty14" class="col-sm-4 float-right form-control" min=1 value="1">
+                
+                                                <button class="btn btn-primary" id="btn14">Add to cart</button>
+                                            </div>
+                                        </div>
+                
+                                        <div class="card mx-1" style="width: 18rem; ">
+                                                <img src="images/keyboard/cd_victsing.jpg" class="card-img-top" alt="victsing">
+                                                <div class="card-body">
+                                                    <a href="victsing.html">
+                                                        <h5 class="card-title" id="prod16">VicTsing Gaming Keyboard</h5>
+                                                    </a>
+                                                    <p class="card-text"><b>Price: &euro;<span class="price" id="prc16">25</span></b></p>
+                                                    <input type="number" id="qnty16" class="col-sm-4 float-right form-control" min=1 value="1">
+                    
+                                                    <button class="btn btn-primary" id="btn16">Add to cart</button>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="card mx-1 " style="width: 18rem;">
+                                                    <img src="images/keyboard/cd_redragonk580.jpg" class="card-img-top" alt="redragonk580">
+                                                    <div class="card-body">
+                                                        <a href="redragonk580.html">
+                                                            <h5 class="card-title" id="prod12">Redragon K580</h5>
+                                                        </a>
+                                                        <p class="card-text"><b>Price: &euro;<span class="price" id="prc12">65</span></b></p>
+                                                        <input type="number" id="qnty12" class="col-sm-4 float-right form-control" min=1 value="1">
+                        
+                                                        <button class="btn btn-primary" id="btn12">Add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <h3 class="text-light bg-dark">About us</h3>
+                    <div class="container">
+                        <p>GameStop is a family of specialty retail brands and we are a global retailer of multichannel video game, pop culture collectibles, consumer electronics and wireless services, operating more than 5,800 stores in 14 countries across Europe, Canada, Australia and the United States.
+                                GameStop is committed to delivering innovation to consumers anywhere, anytime and any way they want it. Whether looking for new or pre-owned, digital or physical video game titles, the latest in video game hardware or accessories or consumer electronics, gaming and technology enthusiasts are invited to discover and enjoy their favorite products in one of GameStop's welcoming retail environments.
+
+                                Our buy-sell-trade program provides substantial value to customers looking to trade-in video game hardware and software, or smartphones and tablets they no longer use or play. Each year GameStop provides more than $1 billion in trade credits, with more than 70 percent of these trade dollars being applied toward the purchase of new products.
+                                
+                                The company's global family of brands include GameStop; EB Games, Micromania, and Game Informer® magazine, ThinkGeek, and Simply Mac.
+
+                            <br><br><br><br><br></p>
+                    </div>
+    
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="bg-secondary ">
+                <div class="container-fluid bg-dark">
+                    <div class="row text-center">
+                        <div class="col-md-6 text-light">
+                            <p> Copyright © 2019 PCSHOP</p>
+                        </div>
+                        <div class="col-md-6 text-light">
+                            <h4>Contact us</h4>
+                            <ul class="nobull">
+                                <li>Phone: 026/444891</li>
+                                <li>Mail: zod886@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/searchsort.js"></script>
+        <script type="text/javascript" src="js/loggedin.js"></script>
+        <script type="text/javascript" src="js/cart.js"></script>
+    
+
+</body>
+
+</html>
